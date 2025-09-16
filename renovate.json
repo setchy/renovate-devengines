@@ -1,0 +1,20 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        ":separateMultipleMajorReleases",
+        ":enableVulnerabilityAlerts"
+    ],
+    "customManagers": [
+        {
+            "customType": "jsonata",
+            "managerFilePatterns": [
+                "/package.json/"
+            ],
+            "matchStrings": [
+                "$each(devEngines.runtimes, function($v, $k) { {\"name\":$k, \"version\": $v, \"depType\": \"devDependencies\"}})"
+            ],
+            "datasourceTemplate": "npm"
+        }
+    ]
+}
