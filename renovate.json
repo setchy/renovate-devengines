@@ -13,7 +13,7 @@
                 "/package.json/"
             ],
             "matchStrings": [
-                "$each(devEngines.runtime, function($v, $k) { {\"depName\":$v.name, \"currentValue\": $v.version, \"depType\": \"devDependencies\"}})"
+                "devEngines.runtime.{ \"depName\": name, \"currentValue\": version, \"depType\": \"devDependencies\"}"
             ],
             "datasourceTemplate": "npm"
         }
