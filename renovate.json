@@ -8,6 +8,7 @@
     "customManagers": [
         {
             "customType": "jsonata",
+            "fileFormat": "json",
             "managerFilePatterns": [
                 "/package.json/"
             ],
