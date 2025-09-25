@@ -21,7 +21,7 @@
         ],
         "packageManager": {
             "name": "npm",
-            "version": "11.2.0",
+            "version": "11.6.1",
             "onFail": "ignore"
         }
     }
